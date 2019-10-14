@@ -10,7 +10,7 @@ Create `requirements.yml` in your ansible playbook-folder.
 
     ---
     # Documentation:
-    # https://docs.ansible.com/ansible/latest/reference_appendices/galaxy.html#installing-multiple-ro
+    # https://docs.ansible.com/ansible/latest/reference_appendices/galaxy.html#installing-multiple-roles-from-a-file
     
     - name: tvartom.git
       src: https://github.com/tvartom/ansible-role-git
@@ -60,4 +60,3 @@ Author Information
 ------------------
 
 tvartom
-
