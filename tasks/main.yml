@@ -1,0 +1,21 @@
+---
+- name: Install Git (APT)
+  become: yes
+  apt:
+    name: git
+    update_cache: yes
+    cache_valid_time: 600
+    state: present
+  when: ansible_os_family == "Debian"
+
+# git på cenotos är hopplöst gammal 1.8
+# git2u är från IUS repot
+- name: Install Git (YUM)
+  become: yes
+  yum:
+    name: git2u-all
+    update_cache: yes
+    state: present
+  when: ansible_os_family == "RedHat"
+
+
