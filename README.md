@@ -1,7 +1,7 @@
 tvartom.git
 ===========
 
-Install git and configure git for user account on CentOS as an Ansible role.
+Install git and configure git for user account on CentOS as an Ansible role:
 
 Install role
 ------------
